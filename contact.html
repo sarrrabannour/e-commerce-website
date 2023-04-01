@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../feuille_css/style.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="index.html" class="logo">Fashion</a>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i></span>
+        </label>
+        <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="avis.html"></a>Avis</li>
+            <li><a href="#">Products</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="right-elements">
+
+            <a href="#" class="search"><i class="fas fa-search"></i></a>
+
+            <a href="#" class="cart"><i class="fas fa-shopping-bag"></i></a>
+
+            <a href="#" class="user"><i class="far fa-user"></i></a>
+        </div>
+    </nav>
+    <section class="contact-section">
+        <h2>Formulaire d'inscription</h2>
+        <div class="table-container">
+        <form class="form-table" id="customer" action="client.php" method="post">
+            <fieldset >
+                <legend>Inscription</legend>
+                <table>
+                    <tr>
+                        <td><label for="firstName">Nom</label></td>
+                        <td><input id="firstName" type="text" required size="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Prénom</label></td>
+                        <td><input id="lastName" type="text" required size="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cin">CIN</label></td>
+                        <td><input id="cin" type="text" pattern="[0-9]{8}" title="cin avec 8 chiffres"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sex">Sexe</label></td>
+                        <td><input id="sex" type="radio" name="sex" value="femme">femme
+                            <input id="sex" type="radio" name="sex" value="homme">homme
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="dateNais">Date de naissance</label></td>
+                        <td><input id="dateNais" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Age</label></td>
+                        <td><input id="age" type="number" max="99" min="18"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="adresse">Address</label></td>
+                        <td><textarea id="adresse" rows="3" col="55"> Route Tusis cité el Ons</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ville">Ville</label></td>
+                        <td>
+                            <select id="ville" size="3" multiple>
+                                <option value="Sfax" selected>Sfax</option>
+                                <option value="Tunis">Tunis</option>
+                                <option value="Sousse">Sousse</option>
+                                <option value="Gabes">Gabes</option>
+                                <option value="Gabes">Sidi</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="telephone">Telephone</label></td>
+                        <td><input id="telephone" type="tel" maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input id="email" type="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Site Web</label></td>
+                        <td><input id="website" type="url"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="photo">Ajoutez votre photo</label></td>
+                        <td><input name="photo" type="file" id="photo"> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="couleur">Choisissez la couleur de <br> votre carte d'étudiant</label></td>
+                        <td><input name="couleur" type="color" id="couleur"> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">Ajouter</button><button type="reset">Effacer</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-logo-container">
+
+                <div class="footer-logo">
+                    Fashion
+                </div>
+                <span>&#169; 2022 Isims.</span>
+
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="footer-menu">
+
+
+                <div class="footer-menu-box">
+                    <strong>Product</strong>
+                    <ul>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Latest Kids Clothes</a></li>
+                        <li><a href="#">New Men Shoes</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-menu-box">
+                    <strong>Contact</strong>
+                    <ul>
+                        <li>sarra@gmail.com</li>
+                        <li>+(216)21653514</li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-menu-box">
+                    <strong>Company</strong>
+                    <ul>
+                        <li><a href="#">Merch Store</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-box">
+                    <strong>Company 2</strong>
+                    <ul>
+                        <li><a href="#">Merch Store</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </footer>
+    <span class="copyright">Copyright 2022 - Sarra Bannour</span>
+
+</body>
+
+</html>
